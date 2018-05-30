@@ -1,34 +1,20 @@
 package utils;
 
 public class OperationHelper {
-	public static void calculator1(String input) {
+	public static void main(String[] args) {
 		Calculator cal = new Calculator();
-		cal.calculate1(input);
-	}
-
-	public static void calculator2(String input) {
-		Calculator cal = new Calculator();
-		cal.calculate2(input);
-	}
-
-	public static void calculator3(String input) {
-		Calculator cal = new Calculator();
-		cal.calculate3(input);
-	}
-
-	public static void calculator4(String input) {
-		Calculator cal = new Calculator();
-		cal.calculate4(input);
-	}
-
-	public static void calculator5(int numberOne, String operator, int numberTwo) {
-		Calculator cal = new Calculator();
+		String var1 = "20/80";
+		String var2 = "20+       80";
+		String var3 = "20          /       80";
+		String var4 = "20vcxvvcxv          *       dfgfdf80";
+		int numberOne = 20;
+		int numberTwo = 80;
+		String operator = "/";
+		cal.calculate1(var1);
+		cal.calculate2(var2);
+		cal.calculate3(var3);
+		cal.calculate4(var4);
 		cal.calculate5(numberOne, operator, numberTwo);
-
-	}
-
-	public static void calculator() {
-		Calculator cal = new Calculator();
 		cal.plus();
 		cal.sub();
 		cal.devide();

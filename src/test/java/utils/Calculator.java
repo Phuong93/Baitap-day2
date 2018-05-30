@@ -7,7 +7,7 @@ public class Calculator {
 
 	public static void calculate1(String valueInput) {
 		// Do function in here
-		// Bai tap 1
+		// Exercise 1
 		// Case 1: "20+-*/80"
 		String operators[] = valueInput.split("[0-9]+"); // Split all numbers
 		String inputs[] = valueInput.split("[+-/*//]"); // Split all +-*/
@@ -15,15 +15,15 @@ public class Calculator {
 		switch (operators[1]) {
 		case "+":
 			value = Integer.parseInt(inputs[0]) + Integer.parseInt(inputs[1]); // [0] is no array input																				
-			System.out.println("Bai tap 1: " + value);
+			System.out.println("Exercise 1: " + value);
 			break;
 		case "-":
 			value = Integer.parseInt(inputs[0]) - Integer.parseInt(inputs[1]);
-			System.out.println("Bai tap 1: " + value);
+			System.out.println("Exercise 1: " + value);
 			break;
 		case "*":
 			value = Integer.parseInt(inputs[0]) * Integer.parseInt(inputs[1]);
-			System.out.println("Bai tap 1: " + value);
+			System.out.println("Exercise 1: " + value);
 			break;
 		case "/":
 			double value1 = 0;
@@ -31,7 +31,7 @@ public class Calculator {
 				System.out.println("Cannot devide to 0");
 			} else {
 				value1 = Double.parseDouble(inputs[0]) / Double.parseDouble(inputs[1]);
-				System.out.println("Bai tap 1: " + value1);
+				System.out.println("Exercise 1: " + value1);
 			}
 			break;
 		}
@@ -55,49 +55,48 @@ public class Calculator {
 		calculate2(valueInput);
 	}
 
-	// Bai tap 2: 20+-*/80
+	// Exercise: 20+-*/80
 	//public static void calculate5(int numberOne, String operator, int numberTwo) {
 	public static void calculate5(int numberOne, String operator , int numberTwo) {
 		switch (operator) {
 		case "+":
-			//System.out.println("Bai tap 2:" + (numberOne + numberTwo));
-			System.out.println("Bai tap 2:" + (numberOne - numberTwo));
+			System.out.println("Exercise 2:" + (numberOne + numberTwo));
 			
 			break;
 		case "-":
-			System.out.println("Bai tap 2:" + (numberOne - numberTwo));
+			System.out.println("Exercise 2:" + (numberOne - numberTwo));
 			break;
 		case "*":
-			System.out.println("Bai tap 2:" + (numberOne * numberTwo));
+			System.out.println("Exercise 2:" + (numberOne * numberTwo));
 			break;
 		case "/":
 			if (numberTwo == 0) {
-				System.out.println("Bai tap 2 - Can not devide to 0");
+				System.out.println("Exercise - Can not devide to 0");
 			} else {
-				System.out.println("Bai tap 2:" + (double) numberOne / (double) numberTwo);
+				System.out.println("Exercise 2:" + (double) numberOne / (double) numberTwo);
 				break;
 			}
 		}
 	}
 
-	// Bai tap 3
+	// Exercise 3
 	public static void plus() {
-		System.out.println("Bt 3: x+y:" + (x + y));
+		System.out.println("Exercise 3: x+y:" + (x + y));
 	}
 
 	public static void sub() {
-		System.out.println("Bt 3: x-y:" + (x - y));
+		System.out.println("Exercise 3: x-y:" + (x - y));
 	}
 
 	public static void devide() {
 		if (y == 0) {
-			System.out.println("Bt 3: x/y Can not devide to 0");
+			System.out.println("Exercise 3: x/y Can not devide to 0");
 		} else {
-			System.out.println("Bt 3: x/y:" + ((double) x / (double) y));
+			System.out.println("Exercise 3: x/y:" + ((double) x / (double) y));
 		}
 	}
 
 	public static void multi() {
-		System.out.println("Bt 3: x*y:" + (x * y));
+		System.out.println("Exercise 3: x*y:" + (x * y));
 	}
 }
