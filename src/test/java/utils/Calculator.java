@@ -57,6 +57,7 @@ public class Calculator {
 
 	// Exercise: 20+-*/80
 	//public static void calculate5(int numberOne, String operator, int numberTwo) {
+	
 	public static void calculate5(int numberOne, String operator , int numberTwo) {
 		switch (operator) {
 		case "+":
