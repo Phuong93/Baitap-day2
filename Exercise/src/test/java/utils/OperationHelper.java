@@ -38,5 +38,18 @@ public class OperationHelper {
 		// input array
 		int[] a = { 31, 28, 30, 32 };
 		dom.largestNumber(a);
+
+/**
+* AUTHOR : Phuong.tt
+* UNIT : Su3 - Group 2
+* MODIFIED : Return day of month and return largest number
+* UPDATE DATE : 30-05-2018
+*/
+		Selenium sel = new Selenium();
+		String objectName = "search-textbox-name ";
+		String value = "abc";
+		System.out.println(sel.getIdentifier(objectName, value));
+		sel.click(objectName, value);
+
 	}
 }
