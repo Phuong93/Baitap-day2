@@ -38,5 +38,7 @@ public class OperationHelper {
 		// input array
 		int[] a = { 31, 28, 30, 32 };
 		dom.largestNumber(a);
+		
+		ReadFileApachePoi.readFile("Test_Read_Excel.xlsx");
 	}
 }
